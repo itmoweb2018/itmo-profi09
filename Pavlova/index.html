@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sun</title>
+
+	<style type="text/css">
+
+	
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			position: fixed;
+		}
+
+
+		/* задник */
+		#back_color {
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #1D1632;
+			color: white;
+			font-weight: bold;
+			animation: a_bg_color 20s linear infinite;
+		}
+
+		/* это картинка с фоном (не цвет) */
+		#back {
+            
+			bottom: 0;
+			filter: brightness(20%);
+			animation: a_back 20s linear infinite;
+		}
+
+
+		
+		#sun {
+			left: 0;
+			bottom: 0;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px 5px #FFCD00;
+			background-color: #FFCD00;
+			animation:
+				a_sun_x 20s linear infinite,
+				a_sun_y 20s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+		}
+
+		/* Это сами анимации */
+		@keyframes a_sun_x {
+			0% {
+				left: 0;
+			}
+
+			100% {
+				left: 590px;
+			}
+		}
+
+		@keyframes a_sun_y {
+			0% {
+				bottom: 60px;
+			}
+
+			40% {
+				bottom: 200px;
+				background-color: #FFE400;
+				box-shadow: 0 0 10px 5px #FFFFFF;
+			}
+		}
+
+
+		@keyframes a_bg_color {
+			20% {
+				background-color: #A6E2FE;
+			}
+
+			30% {
+				background-color: #ECF9FF;
+				color: black;
+			}
+		}
+
+		@keyframes a_back {
+			30% {
+				filter: brightness(100%);
+			}
+
+			70% {
+				filter: brightness(100%);
+			}
+
+		}
+
+	</style>
+
+</head>
+<body>
+
+<div id="back_color">
+	
+</div>
+
+<div id="sun"></div>
+<img id="back" src="back.png">
+
+</body>
+</html>
