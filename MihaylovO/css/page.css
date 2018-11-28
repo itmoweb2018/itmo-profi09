@@ -1,0 +1,41 @@
+header {
+  position: fixed !important;
+  background: #2a2f4a !important;
+}
+
+main {
+  padding-top: 50px;
+}
+main .container {
+  flex-wrap: wrap;
+}
+main .container .title {
+  width: 100%;
+}
+main .container .title h1 {
+  display: inline;
+}
+main .container .title h1::after {
+  content: "";
+  height: 1px;
+  display: block;
+  width: 20%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid white;
+}
+main .container .image {
+  width: 100%;
+}
+main .container .image img {
+  width: 100%;
+}
+main .container .text p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/*# sourceMappingURL=page.css.map */
