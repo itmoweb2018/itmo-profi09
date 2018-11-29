@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule page-1 /page_1.php [L]
+RewriteRule page-2 /page_1.php [L]
