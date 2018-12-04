@@ -11,24 +11,23 @@
 
 
 <script type="text/javascript">
-      var numberOfPlates = prompt("Enter a number of plates you'd have cleared:");
-      var restOfMeans = prompt("Enter the total of means you have before clearing your plates:");
+  var numberOfPlates = prompt("Enter a number of plates you'd have cleared:");
+  var restOfMeans = prompt("Enter a numeral lot of means you've got before clearing your plates:");
 
-      while (numberOfPlates > 0 && restOfMeans > 0) {
-        numberOfPlates = numberOfPlates - 1;
-        restOfMeans = restOfMeans - 0.5;
-        console.log("Plates to be cleared: " + numberOfPlates + "\nRest of the means: " + restOfMeans + "\n ");
-        if (restOfMeans === 0 && numberOfPlates > 0) {
-          alert("Scouring means have depleted \nPlates to be cleared: " + numberOfPlates);
-          break;
-        }
-        if (restOfMeans > 0 && numberOfPlates === 0) {
-          alert("All plates are clear!!! \nRest of scouring means: " + restOfMeans);
-          break;
-        }
-        if (restOfMeans === 0 && numberOfPlates === 0) {
-          alert("All plates are clear as means are out - what an accurate mind!!!");
-          break;
-        }
-      }
+  while (numberOfPlates > 0 && restOfMeans >= 0.5) {
+    numberOfPlates = numberOfPlates - 1;
+    restOfMeans = restOfMeans - 0.5;
+    console.log("Plates to be cleared: " + numberOfPlates + "\nRest of the means: " + restOfMeans + "\n ");
+    if (restOfMeans < 0.5 && numberOfPlates > 0) {
+      alert("Scouring means are no longer sufficient \nAvailable means: " + restOfMeans + "\nPlates to be cleared: " + numberOfPlates);
+      break;
+    }
+    if (restOfMeans >= 0.5 && numberOfPlates === 0) {
+      alert("All plates are clear!!! \nRest of scouring means: " + restOfMeans);
+      break;
+    }
+    if (restOfMeans < 0.5 && numberOfPlates === 0) {
+      alert("All plates are clear as means are out - what an accurate mind!!!");
+    }
+  }
 </script>
