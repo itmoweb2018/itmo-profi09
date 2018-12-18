@@ -1,0 +1,1022 @@
+* {
+	margin: 0;
+	font-family: "Open Sans";
+	box-sizing: border-box;
+	color: white;
+}
+
+p, a, label {
+	font-weight: 600;
+}
+
+.menu {
+
+	position: fixed;
+	width: 100%;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	background-color:rgba(44,48,77, 0.6); 
+}
+
+.mobile-menu {
+	width: 88%;
+	float: left;
+	padding: 30px 0px 30px 5%;
+
+}
+.mobile-menu a {
+	float: left;
+	text-decoration: none;
+	margin-right: 30px;
+	color: white;
+	transition: 0.4s ease 0s;
+}
+
+.mobile-menu a:hover {
+	color: skyblue;
+}
+
+.static-menu {
+	text-decoration: none;
+	float: right;
+	padding: 30px; 
+	transition: 0.4s ease 0s;
+}
+
+.static-menu:hover {
+	color: skyblue;
+	transition: 0.4s ease 0s;
+}
+
+.static-menu:hover {
+	color: skyblue;
+}
+
+.static-menu a {
+	transition: 0.4s ease 0s;
+}
+
+.static-menu a:hover {
+	color: skyblue;
+}
+
+.static-menu span {
+	margin-left: 10px;
+	transition: 0.4s ease 0s;
+}
+
+.static-menu span:hover {
+	color: skyblue;
+}
+
+.modalDialog {
+	position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:rgba(44,48,77, 0.98);
+     z-index: 99999;
+    display: none;	
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;  
+}
+ 
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 18% 39%;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+    position: absolute;
+    right: 45px;
+    text-align: center;
+    top: 30px;
+    width: 24px;
+    text-decoration: none;
+    font-size: 25px;
+}
+ 
+.close:hover { 
+	color: #00d9ff; 
+}
+
+.modalcenter {
+	text-decoration: none;
+	border-top: 1px solid #6969699e;
+}
+
+.modalcenter a {
+	display: block;
+	text-decoration: none;
+	padding: 30px 0px 30px 0px;
+	border-bottom: 1px solid #6969699e;
+	z-index: 2;
+	text-align: center;
+}
+
+
+.first {
+	background: url(images/banner.jpg);
+	background-size: cover;
+}	
+
+.first .content {
+	background: rgba(30,36,65, 0.8);
+	width: 100%;
+	padding: 190px 190px 100px 190px;
+	height: 550px;
+}
+
+.first h1 {
+	border-bottom: 2px solid white;
+	font-size: 58px;
+	padding-bottom: 30px;
+}
+
+.first p {
+	padding-top: 30px;
+	width: 46%;
+	float: left;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.first a {
+	margin: 24px;
+	padding: 19px;
+	float: left;
+	width: 17%;
+	border: 1px solid white;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 5px;
+	transition: 0.4s ease 0s;
+}
+
+.first a:hover {
+	color: skyblue;
+	border-color: skyblue;
+}
+
+.first span {
+	font-size: 25px; 
+	margin-left: 5%;
+}
+
+.line:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.block {
+	float: left;
+}
+
+.block h3 {
+	font-size: 36px;
+	border-bottom: 2px solid white;
+	width: 250px;
+	padding-bottom: 8px;
+}
+
+.block p {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 15px 0px;
+}
+
+.block.col-1 {
+	background: url(images/pic01.jpg);
+	background-size: cover;
+	width: 40%;
+}
+
+.aliquam {
+	background: rgba(121,192,216, 0.8);
+	padding: 220px 120px;
+	height: 500px;
+	transition: background 0.7s ease 0s;
+}
+
+.aliquam:hover {
+    background: rgba(121,192,216, 0);
+}
+
+.block.col-2 {
+	background: url(images/pic02.jpg);
+	background-size: cover;
+	width: 60%;
+}
+
+.tempus {
+	padding: 220px 120px;
+	height: 500px;
+	background: rgba(124,117,178,0.8);
+	transition: background 0.7s ease 0s;
+}
+
+.tempus:hover {
+    background: rgba(124,117,178,0);	
+}
+
+.block.col-3 {
+	background: url(images/pic03.jpg);
+	background-size: cover;
+	width: 60%;
+}
+
+.magna {
+	background: rgba(229,146,138,0.8);
+	padding: 220px 120px;
+	height: 500px;
+	transition: background 0.7s ease 0s;
+}
+
+.magna:hover {
+    background: rgba(229,146,138,0);
+}
+
+.block.col-4 {
+	background: url(images/pic04.jpg);
+	background-size: cover;
+	width: 40%;
+}
+
+.ipsum {
+	background: rgba(223,182,144,0.8);
+	padding: 220px 120px;
+	height: 500px;
+	transition: background 0.7s ease 0s;
+}
+
+.ipsum:hover {
+    background: rgba(223,182,144,0);
+}
+
+.block.col-5 {
+	background: url(images/pic05.jpg);
+	background-size: cover;
+	width: 40%;
+}
+
+.consequat {
+	background: rgba(124,117,178,0.8);
+	padding: 220px 120px;
+	height: 500px;
+	transition: background 0.7s ease 0s;
+}
+
+.consequat:hover {
+    background: rgba(124,117,178,0);
+}
+
+.block.col-6 {
+	background: url(images/pic06.jpg);
+	background-size: cover;
+	width: 60%;
+}
+
+.etiam {
+	background: rgba(121,173,150,0.8);
+	padding: 220px 120px;
+	height: 500px;
+	transition: background 0.7s ease 0s;
+}
+
+.etiam:hover {
+    background: rgba(121,173,150,0);
+}
+
+
+
+.third .content {
+	background-color: #2a2f4a;
+	padding: 100px 190px;
+	height: 500px;
+
+}
+
+.third h3 {
+	border-bottom: 2px solid white;
+	font-size: 40px;
+	padding-bottom: 30px;
+	width: 24%;
+}
+
+.third p {
+	padding-top: 30px;
+	float: left;
+	letter-spacing: 3px;
+	text-align: justify;
+}
+
+.third a {
+	display: block;
+	margin-top: 24px;
+	padding: 19px;
+	float: left;
+	width: 17%;
+	border: 1px solid white;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 5px;
+	transition: 0.4s ease 0s;
+}
+
+.third a:hover {
+	color: skyblue;
+	border-color: skyblue;
+}
+
+.third:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.third span {
+	font-size: 25px; 
+	margin-left: 5%;
+}
+
+.third:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+
+
+
+
+
+.fourth {
+	background-color: #242943;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 1fr 1fr 1fr;
+	border-bottom: 1px solid #2a2f4a;
+}
+
+
+
+
+
+.form {
+	
+	padding: 100px 70px 100px 190px;
+	background-color: #242943;
+}
+
+form {
+	grid-row:1/4;
+	grid-column: 1/2;
+	border-right: 1px solid #2a2f4a;
+}
+	
+.row {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 10px 0px;
+}
+
+.special  {
+	margin: 0px 20px 20px 0px;
+}
+
+input {
+	padding: 15px;
+	background: rgba(212, 212, 255, 0.035);
+	border-color: transparent;
+	width: 47%;
+	font-size: 1.2em;
+}
+
+input:focus {
+	border-color: skyblue;
+}
+
+textarea {
+	color: #2a2f4a;
+	border-color: transparent;
+	background: rgba(212, 212, 255, 0.035);
+	max-width: 97%;
+	height: 230px;
+	max-height: 230px;
+	padding: 15px;
+	font-size: 1.2em;
+}
+
+textarea:focus {
+	border-color: skyblue;
+	color: white;
+}
+
+.buttons input {
+	margin: 40px 30px 0px 0px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.sendbutton {
+	background-color: white;
+	color: black;
+	width: 30%;
+	transition: background 0.4s ease 0s;
+}
+
+.sendbutton:hover {
+	background-color: skyblue;
+}
+
+.clearbutton {
+	width: 15%;
+	border: 2px solid white;
+	margin-left: 0px 10px;
+	transition: 0.4s ease 0s;
+}
+
+.clearbutton:hover {
+	border-color: skyblue;
+	color: skyblue;
+}
+
+
+
+
+
+.contact-container {
+	font-size: 1.5em;
+	padding: 80px 0px 0px 70px;
+}
+
+.contact-container a {
+	font-weight: 100;
+	border-bottom: 1px dotted white;
+	text-decoration: none;
+	font-size: 0.85em;
+}
+
+.contact-container p {
+	font-weight: 100;
+	font-size: 0.85em;
+}
+
+.contact-container div {
+	float: left;
+}
+
+.mail {
+	grid-row:1/2;
+	grid-column: 2/3;
+}
+	
+.phone {
+	grid-row:2/2;
+	grid-column: 2/3;
+	border-bottom: 1px solid #2a2f4a;
+}
+
+.adress {
+	grid-row:3/4;
+	grid-column: 2/3;
+}
+
+.fourth span {
+	background-color: white;
+	border-radius: 100%;
+	text-align: center;
+	color: #242943;
+	height: 48px;	
+	width: 48px;
+	padding: 1.7%;
+	float: left;
+    margin-right: 20px;
+}
+
+
+
+
+
+footer {
+	background-color: #242943;
+	height: 230px;
+}
+
+.social {
+	padding: 75px 190px 100px 190px;
+}
+
+.social span {
+    background-color: white;
+	border-radius: 100%;
+	text-align: center;
+	color: #242943;
+	height: 48px;	
+	width: 48px;
+	padding: 0.9%;
+	float: left;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.bottom {
+	padding: 0px 190px 5px 180px;
+}
+
+.bottom p {
+	display: block;
+	float: left;
+	padding: 0px 10px 0px 10px;
+	font-size: 13px;
+	font-weight: 100;
+	color:#4b5067;
+	border-right: 1px solid #4b5067;
+}
+
+.bottom a {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	font-size: 13px;
+	font-weight: 100;
+	color:#4b5067;
+	text-decoration: none;
+	padding: 0px 10px 0px 10px;
+}
+
+
+
+
+
+@media (max-width: 1440px) {
+
+	.third h3 {
+		width: 35%;
+	}
+}
+
+
+
+@media (max-width: 1380px) {
+
+	.first a {
+		width: 28%;
+	}  
+	.third a {
+		width: 26%;
+	} 
+
+	.clearbutton {
+		width: 25%;
+	}
+
+	.sendbutton {
+		width: 40%;
+	} 
+}
+
+
+
+@media (max-width: 1280px) {
+
+	.mobile-menu {
+		width: 50%;
+	} 
+
+	.first .content {
+		padding: 190px 150px 100px 150px;
+	}
+
+	.third .content {
+		padding: 100px 150px 100px 150px;
+	}
+
+	.social {
+	    padding: 75px 190px 100px 150px;
+	}
+
+	.third a {
+    width: 30%;
+	}
+
+	.form {
+		padding: 100px 60px 100px 150px;
+	}
+}
+
+
+
+@media (max-width: 1106px) {
+
+	.first a {
+		width: 40%;
+	} 
+
+	.third a {
+    	width: 40%;
+	}
+
+	.block h3 {
+		width: 78%;
+	}
+
+	.third h3 {
+		width: 50%;
+	}
+
+	input {
+    width: 46%;
+	}
+	.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 35%;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+}
+
+
+
+@media (max-width: 1084px) {
+
+	input {
+		width: 43%;
+	}
+
+	.sendbutton {
+		width: 50%;
+	} 
+
+	.contact-container {
+    	padding: 80px 0px 0px 20px;
+    }
+
+     .first h1 {
+	    font-size: 40px;
+	}
+
+	.contact-container {
+    	padding: 60px 0px 0px 20px;
+	}
+
+	.contact-container h3 {
+		font-size: 23px;
+	}
+
+	.contact-container p {
+	    font-size: 14px;
+	}
+
+	.contact-container a {
+	    font-size: 14px;
+	}
+
+	.third p {
+		font-size: 14px;
+	}
+	
+}
+
+
+
+@media (max-width: 860px) {
+
+	input {
+		width: 43%;
+	}
+
+	.sendbutton {
+		width: 50%;
+	} 
+
+	.contact-container {
+	    padding: 80px 0px 0px 20px;
+    }
+
+    .block.col-1, .block.col-2,.block.col-3,.block.col-4,.block.col-5,.block.col-6 {
+    	width: 50%;
+    }
+
+    .block h3 {
+    	font-size: 29px;
+    }
+
+    .first .content {
+    	padding: 150px 100px 100px 100px;
+	}
+
+	.first a {
+	    width: 45%;
+	}
+    
+	.first .content {
+    	height: 490px;
+	}
+
+	.aliquam, .tempus, .magna, .ipsum, .consequat, .etiam {
+	    padding: 150px 120px;
+	    height: 400px;
+    }
+
+    .third h3 {
+	    width: 100%;
+	}
+
+	.third .content {
+    	padding: 70px 100px 100px 100px;
+	}
+
+	.form {
+    	padding: 70px 30px 70px 100px;
+	}
+
+	.social {
+	    padding: 75px 100px 100px 200px;
+	}
+
+	.bottom {
+	    padding: 0px 100px 5px 215px;
+	}
+
+	.first p {
+	    padding-top: 30px;
+	    width: 100%;
+	}
+
+	.first a {
+    	margin: 24px 0px 0px 0px;
+	}
+
+    .third a {
+    	width: 50%;
+	}
+
+	.buttons input {
+  		margin: 40px 10px 0px 0px;
+	}
+
+	.sendbutton {
+	    width: 60%;
+	}
+
+	.clearbutton {
+	    width: 31%;
+	}
+
+	.social span {
+        padding: 2%;
+	}
+
+	.third p {
+		font-size: 14px;
+	}
+
+	.social span {
+    	margin-right: 6%;
+	}
+	.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 23%;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+}
+
+
+
+@media (max-width: 700px) {
+
+	.first a {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.third a {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.first p {
+	    text-align: justify;
+	}
+
+	.first h1, .third h3  {
+	    font-size: 30px;
+	    padding-bottom: 20px;
+	}
+
+	.first a, .third a {
+		padding: 14px;
+	}
+
+	.block h3 {
+	    width: 100%;
+	}
+
+	.block {
+		width: 100%;
+		float: none;
+	}
+
+	.block.col-1, .block.col-2,.block.col-3,.block.col-4,.block.col-5,.block.col-6 {
+    	width: 100%;
+    }
+	
+	.fourth {
+		display: block;
+	}
+
+	.form {
+	    padding: 50px 100px 50px 100px;
+	}
+
+	textarea {
+        max-width: 91%;
+	    height: 100px;
+	}
+
+	.sendbutton {
+	    width: 40%;
+	}
+	
+	.contact-container h3 {
+	    width: 100%;
+	}
+
+	.phone {
+	    border-bottom: none;
+	}
+
+	.contact-container {
+   		padding: 30px 0px 30px 25%;
+        border-bottom: 1px solid #2a2f4a;
+	}
+
+	.contact-container h3 {
+   		font-size: 30px;
+	}
+
+	.contact-container a, .contact-container p {
+   		font-size: 17px;
+	}
+
+	.adress {
+		height: 160px;
+	}
+
+	.social {
+	    padding: 50px 50px 80px 100px;
+	}
+
+	.bottom {
+	    padding: 0px 100px 5px 100px;
+	}
+
+	.sendbutton {
+	    width: 50%;
+	}
+}
+
+
+
+@media (max-width: 520px) {
+	
+	.third .content {
+	    height: 530px;
+	    padding: 50px 50px 50px 50px;
+	}
+
+	.social {
+	    padding: 50px 50px 80px 50px;
+	}
+
+	.first h1, .third h3 {
+	    font-size: 24px;
+	}
+
+    .first p {
+	    font-size: 14px;
+	}
+
+	.first .content {
+	    padding: 100px 50px 100px 50px;
+	    height: 400px;
+	}
+
+	.first p {
+	   text-align: left;
+	}
+
+	.mobile-menu p {
+		visibility: hidden;
+	}
+
+	.mobile-menu {
+	    padding: 30px 0px 0px 5%;
+	}
+
+	.form {
+	    padding: 50px 50px 50px 50px;
+	}
+
+	.contact-container {
+	    padding: 30px 0px 30px 15%;
+	}
+	
+	.social {
+	    padding: 50px 30px 50px 50px;
+	}
+
+	.bottom {
+	    padding: 30px 50px 5px 40px;
+	}
+
+	.contact-container h3 {
+	    font-size: 24px;
+	}
+
+	.sendbutton {
+	    width: 61%;
+	}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 0;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+}
+
+@media (max-width: 400px) {
+	
+	.third .content {
+	    height: 530px;
+	    padding: 50px 50px 50px 50px;
+	}
+
+	.social {
+	    padding: 50px 50px 80px 50px;
+	}
+
+	.first h1, .third h3 {
+	    font-size: 24px;
+	}
+
+    .first p {
+	    font-size: 14px;
+	}
+
+	.first .content {
+	    padding: 100px 50px 100px 50px;
+	    height: 400px;
+	}
+
+	.first p {
+	   text-align: left;
+	}
+
+	.mobile-menu p {
+		visibility: hidden;
+	}
+
+	.mobile-menu {
+	    padding: 30px 0px 0px 5%;
+	}
+
+	.form {
+	    padding: 50px 50px 50px 50px;
+	}
+
+	.contact-container {
+	    padding: 30px 0px 30px 15%;
+	}
+	
+	.social {
+	    padding: 50px 30px 50px 50px;
+	}
+
+	.bottom {
+	    padding: 30px 50px 5px 40px;
+	}
+
+	.contact-container h3 {
+	    font-size: 24px;
+	}
+
+	.sendbutton {
+	    width: 61%;
+	}
+
+}
